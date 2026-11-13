@@ -1,0 +1,10 @@
+{
+  "name": "esportes-sem-limites",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Site informativo sobre inclusão de pessoas com deficiência no esporte (projeto acadêmico).",
+  "scripts": {
+    "start": "npx --yes serve@14.2.4 --listen 3000 --no-clipboard .",
+    "validar": "npm install --no-save vnu-jar@24.10.17 && java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html --errors-only --also-check-css --filterpattern \".*node_modules.*\" ."
+  }
+}

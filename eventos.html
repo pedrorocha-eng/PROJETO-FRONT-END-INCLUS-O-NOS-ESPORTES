@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agenda de eventos | Esportes sem Limites</title>
+<meta name="description" content="Festivais, torneios e oficinas de esporte inclusivo, com acessibilidade garantida.">
+<meta name="theme-color" content="#111111">
+<meta property="og:title" content="Agenda de eventos | Esportes sem Limites">
+<meta property="og:description" content="Festivais, torneios e oficinas de esporte inclusivo, com acessibilidade garantida.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Jost:wght@500&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+  /* Aplica preferências salvas antes da renderização (evita "piscar" o tema) */
+  try { var p = JSON.parse(localStorage.getItem("esl:prefs") || "{}"); var d = document.documentElement;
+    if (p.scale) d.style.setProperty("--font-scale", p.scale);
+    if (p.theme && p.theme !== "auto") d.setAttribute("data-theme", p.theme);
+    if (p.contrast) d.setAttribute("data-contrast", p.contrast); } catch (e) {}
+</script>
+</head>
+<body data-page="eventos">
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" fill="currentColor"/><circle cx="32" cy="32" r="15" fill="none" stroke="var(--bg)" stroke-width="5"/><path d="M17 32h30" stroke="var(--bg)" stroke-width="5"/></svg><span>Esportes sem Limites</span></a>
+    <button type="button" class="nav__toggle" aria-controls="painel-menu" aria-expanded="false">
+      <span class="nav__toggle-icon" aria-hidden="true"></span><span class="nav__toggle-label">Menu</span>
+    </button>
+    <div class="nav__panel" id="painel-menu">
+      <nav aria-label="Principal">
+        <ul class="nav__menu" id="menu-principal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="modalidades.html">Modalidades</a></li>
+        <li><a href="paradesporto.html">Paradesporto</a></li>
+        <li><a href="eventos.html" aria-current="page">Eventos</a></li>
+        <li><a href="participe.html">Participe</a></li>
+        <li><a href="doe.html">Doe</a></li>
+        <li><a href="impacto.html">Impacto e ODS</a></li>
+        <li><a href="assistente.html">Assistente IA</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <form class="search" id="form-busca" role="search" action="assistente.html">
+        <label class="sr-only" for="busca-site">Buscar no site</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="busca-site" name="q" placeholder="Buscar no site" autocomplete="off">
+        <ul class="search__results" id="busca-resultados" hidden></ul>
+        <p class="sr-only" id="busca-status" role="status"></p>
+      </form>
+    </div>
+  </div>
+</header>
+<div class="local-bar">
+  <div class="container">
+    <p class="local-bar__title">Eventos</p>
+    <div class="a11y-group">
+      <p class="a11y-group__label" id="a11y-label">Acessibilidade</p>
+      <button type="button" class="a11y-toggle" aria-controls="a11y-tools" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="4.5" r="1.8"/><path d="M5 8.5l7 1.5 7-1.5M12 10v5m0 0-3 6m3-6 3 6"/></svg>
+        <span>Acessibilidade</span>
+      </button>
+      <ul class="a11y-tools" id="a11y-tools" aria-labelledby="a11y-label">
+        <li><button type="button" id="a11y-font-up" aria-label="Aumentar tamanho da fonte">A+</button></li>
+        <li><button type="button" id="a11y-font-down" aria-label="Diminuir tamanho da fonte">A−</button></li>
+        <li><button type="button" id="a11y-contrast" aria-pressed="false">Alto contraste</button></li>
+        <li><button type="button" id="a11y-dark" aria-pressed="false">Modo claro</button></li>
+        <li><button type="button" id="a11y-readable" aria-pressed="false">Espaçar texto</button></li>
+        <li><button type="button" id="a11y-motion" aria-pressed="false">Pausar animações</button></li>
+        <li><button type="button" id="a11y-reset">Restaurar</button></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<main id="conteudo" tabindex="-1">
+<section class="hero hero--page" aria-labelledby="titulo">
+  <div class="container hero__content">
+    <nav class="breadcrumb" aria-label="Você está em">
+      <ol><li><a href="index.html">Início</a></li><li aria-current="page">Eventos</li></ol>
+    </nav>
+    <h1 id="titulo">Agenda de eventos</h1>
+    <p class="mb-0">Festivais, torneios e oficinas abertos à comunidade. Todos os eventos têm acessibilidade física e comunicacional garantida.</p>
+  </div>
+</section>
+<section class="section" aria-labelledby="t-ev">
+  <div class="container split split--wide">
+    <div>
+      <h2 id="t-ev">Próximos eventos</h2>
+      <p class="sr-only" id="filtro-ev">Filtrar por tipo de evento</p>
+      <ul class="chips" aria-labelledby="filtro-ev">
+        <li><button type="button" class="chip" data-filter="todos" aria-pressed="true">Todos</button></li>
+        <li><button type="button" class="chip" data-filter="festival" aria-pressed="false">Festivais</button></li>
+        <li><button type="button" class="chip" data-filter="torneio" aria-pressed="false">Torneios</button></li>
+        <li><button type="button" class="chip" data-filter="oficina" aria-pressed="false">Oficinas</button></li>
+        <li><button type="button" class="chip" data-filter="formacao" aria-pressed="false">Formação</button></li>
+      </ul>
+      <p id="contador-eventos" role="status" class="muted">8 resultados encontrados</p>
+      <ul class="grid grid--2" style="list-style:none;padding:0">
+      <li class="card" data-evento data-tags="festival">
+        <div class="card__meta"><span class="tag tag--dark">Festival</span><span class="tag"><time datetime="2026-12-05">5 dez 2026</time></span></div>
+        <h3>Festival Paradesportivo de Verão</h3>
+        <p>Experimente 6 modalidades adaptadas com nossos atletas. Aberto a pessoas com e sem deficiência, com intérpretes de Libras.</p>
+        <p><strong>Sábado, 9h às 16h</strong><br>Centro Esportivo Sem Limites</p>
+        <div class="card__footer"><button type="button" class="btn btn--sm" data-save-event="e1" data-title="Festival Paradesportivo de Verão" data-date="5 dez 2026 · Centro Esportivo Sem Limites" aria-pressed="false">Tenho interesse</button></div>
+      </li>
+      <li class="card" data-evento data-tags="formacao">
+        <div class="card__meta"><span class="tag tag--dark">Formação</span><span class="tag"><time datetime="2026-12-12">12 dez 2026</time></span></div>
+        <h3>Oficina: Educação Física Inclusiva</h3>
+        <p>Para professores e estudantes: estratégias para incluir alunos com deficiência nas aulas regulares. Certificado de 3h.</p>
+        <p><strong>Sábado, 14h às 17h</strong><br>On-line (com Libras e legendas)</p>
+        <div class="card__footer"><button type="button" class="btn btn--sm" data-save-event="e2" data-title="Oficina: Educação Física Inclusiva" data-date="12 dez 2026 · On-line (com Libras e legendas)" aria-pressed="false">Tenho interesse</button></div>
+      </li>
+      <li class="card" data-evento data-tags="oficina">
+        <div class="card__meta"><span class="tag tag--dark">Oficina</span><span class="tag"><time datetime="2026-12-19">19 dez 2026</time></span></div>
+        <h3>Mutirão de manutenção de cadeiras</h3>
+        <p>Revisão gratuita de cadeiras de rodas esportivas e do dia a dia. Leve sua cadeira!</p>
+        <p><strong>Sábado, 8h às 12h</strong><br>Oficina da ONG</p>
+        <div class="card__footer"><button type="button" class="btn btn--sm" data-save-event="e3" data-title="Mutirão de manutenção de cadeiras" data-date="19 dez 2026 · Oficina da ONG" aria-pressed="false">Tenho interesse</button></div>
+      </li>
+      <li class="card" data-evento data-tags="torneio">
+        <div class="card__meta"><span class="tag tag--dark">Torneio</span><span class="tag"><time datetime="2027-01-23">23 jan 2027</time></span></div>
+        <h3>Copa Sem Limites de Goalball</h3>
+        <p>Torneio regional com 8 equipes. Entrada gratuita — lembre-se: no goalball a torcida fica em silêncio durante o jogo!</p>
+        <p><strong>Sábado, 8h às 18h</strong><br>Ginásio Municipal</p>
+        <div class="card__footer"><button type="button" class="btn btn--sm" data-save-event="e4" data-title="Copa Sem Limites de Goalball" data-date="23 jan 2027 · Ginásio Municipal" aria-pressed="false">Tenho interesse</button></div>
+      </li>
+      <li class="card" data-evento data-tags="festival">
+        <div class="card__meta"><span class="tag tag--dark">Festival</span><span class="tag"><time datetime="2027-02-06">6 fev 2027</time></span></div>
+        <h3>Dia de Vôlei Sentado na Praça</h3>
+        <p>Rede montada na praça para qualquer pessoa experimentar o vôlei sentado. Ação de inclusão reversa.</p>
+        <p><strong>Sábado, 9h às 13h</strong><br>Praça Central (espaço acessível)</p>
+        <div class="card__footer"><button type="button" class="btn btn--sm" data-save-event="e5" data-title="Dia de Vôlei Sentado na Praça" data-date="6 fev 2027 · Praça Central (espaço acessível)" aria-pressed="false">Tenho interesse</button></div>
+      </li>
+      <li class="card" data-evento data-tags="formacao">
+        <div class="card__meta"><span class="tag tag--dark">Formação</span><span class="tag"><time datetime="2027-02-20">20 fev 2027</time></span></div>
+        <h3>Curso de atleta-guia para corrida</h3>
+        <p>Aprenda a correr como guia de atletas cegos ou com baixa visão. Requisito: correr 5 km.</p>
+        <p><strong>Sábado, 8h às 11h</strong><br>Pista de atletismo municipal</p>
+        <div class="card__footer"><button type="button" class="btn btn--sm" data-save-event="e6" data-title="Curso de atleta-guia para corrida" data-date="20 fev 2027 · Pista de atletismo municipal" aria-pressed="false">Tenho interesse</button></div>
+      </li>
+      <li class="card" data-evento data-tags="torneio">
+        <div class="card__meta"><span class="tag tag--dark">Torneio</span><span class="tag"><time datetime="2027-03-13">13 mar 2027</time></span></div>
+        <h3>Circuito de Bocha Paralímpica</h3>
+        <p>Primeira etapa do circuito estadual, classes BC1 a BC4. Transmissão ao vivo com audiodescrição.</p>
+        <p><strong>Sábado, 9h às 17h</strong><br>Centro Esportivo Sem Limites</p>
+        <div class="card__footer"><button type="button" class="btn btn--sm" data-save-event="e7" data-title="Circuito de Bocha Paralímpica" data-date="13 mar 2027 · Centro Esportivo Sem Limites" aria-pressed="false">Tenho interesse</button></div>
+      </li>
+      <li class="card" data-evento data-tags="oficina">
+        <div class="card__meta"><span class="tag tag--dark">Oficina</span><span class="tag"><time datetime="2027-03-20">20 mar 2027</time></span></div>
+        <h3>Roda de conversa: Mulheres no paradesporto</h3>
+        <p>Atletas e treinadoras compartilham trajetórias e discutem igualdade de gênero no esporte (ODS 5).</p>
+        <p><strong>Sábado, 15h às 17h</strong><br>On-line (com Libras)</p>
+        <div class="card__footer"><button type="button" class="btn btn--sm" data-save-event="e8" data-title="Roda de conversa: Mulheres no paradesporto" data-date="20 mar 2027 · On-line (com Libras)" aria-pressed="false">Tenho interesse</button></div>
+      </li>
+      </ul>
+      <p class="empty" id="sem-eventos" hidden>Nenhum evento deste tipo no momento.</p>
+    </div>
+    <aside aria-labelledby="t-agenda" class="card">
+      <h2 id="t-agenda">Minha agenda</h2>
+      <p>Eventos que você marcou com “Tenho interesse”. Ficam salvos neste navegador.</p>
+      <ul class="saved-list" id="minha-agenda"></ul>
+      <p id="agenda-vazia" class="muted">Você ainda não salvou nenhum evento.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="section band--dark" aria-labelledby="t-acess-ev">
+  <div class="container">
+    <div class="section-head"><h2 id="t-acess-ev">Acessibilidade em todos os eventos</h2><p>Nosso padrão mínimo para que ninguém fique de fora.</p></div>
+    <div class="grid grid--4">
+      <article class="card"><h3>Libras</h3><p>Intérpretes em todas as falas e atividades.</p></article>
+      <article class="card"><h3>Audiodescrição</h3><p>Narração das jogadas e do espaço para pessoas cegas.</p></article>
+      <article class="card"><h3>Acesso físico</h3><p>Rampas, banheiros adaptados e lugares reservados.</p></article>
+      <article class="card"><h3>Espaço calmo</h3><p>Sala com pouca luz e ruído para pessoas autistas.</p></article>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <section aria-labelledby="f-ong">
+        <h2 id="f-ong">Esportes sem Limites</h2>
+        <p class="muted">Esporte é direito de todas as pessoas. Atuamos para que pessoas com deficiência pratiquem, compitam e se divirtam com autonomia.</p>
+        <form id="form-newsletter" aria-describedby="newsletter-msg">
+          <label for="newsletter-email">Receba a agenda mensal por e-mail</label>
+          <div class="newsletter">
+            <input type="email" id="newsletter-email" name="email" autocomplete="email" placeholder="seu@email.com" required>
+            <button class="btn btn--sm" type="submit">Assinar</button>
+          </div>
+          <p id="newsletter-msg" role="status" class="muted"></p>
+        </form>
+      </section>
+      <nav aria-labelledby="f-nav">
+        <h2 id="f-nav">Conteúdo</h2>
+        <ul>
+          <li><a href="sobre.html">Sobre a ONG</a></li>
+          <li><a href="modalidades.html">Modalidades adaptadas</a></li>
+          <li><a href="paradesporto.html">História e classificação</a></li>
+          <li><a href="impacto.html">Impacto e ODS</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-part">
+        <h2 id="f-part">Participe</h2>
+        <ul>
+          <li><a href="participe.html">Inscrição de atleta</a></li>
+          <li><a href="participe.html#perfil-voluntario">Seja voluntário(a)</a></li>
+          <li><a href="doe.html">Faça uma doação</a></li>
+          <li><a href="eventos.html">Agenda de eventos</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-ajuda">
+        <h2 id="f-ajuda">Ajuda</h2>
+        <ul>
+          <li><a href="assistente.html">Assistente IA</a></li>
+          <li><a href="contato.html#faq">Perguntas frequentes</a></li>
+          <li><a href="contato.html#acessibilidade">Declaração de acessibilidade</a></li>
+          <li><a href="contato.html">Fale conosco</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="mb-0">© <span data-year>2026</span> Esportes sem Limites — ONG fictícia criada para projeto acadêmico.</p>
+      <p class="mb-0">Contribui com os ODS 3, 4, 5, 10, 11, 12 e 17 da Agenda 2030 da ONU.</p>
+    </div>
+  </div>
+</footer>
+<a class="btn assist-fab" href="assistente.html">Dúvidas? Pergunte à IA</a>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/vlibras.js" defer></script>
+</body>
+</html>

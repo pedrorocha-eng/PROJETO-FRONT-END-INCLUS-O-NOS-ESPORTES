@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impacto social e ODS | Esportes sem Limites</title>
+<meta name="description" content="Como o esporte inclusivo contribui para os Objetivos de Desenvolvimento Sustentável da Agenda 2030.">
+<meta name="theme-color" content="#111111">
+<meta property="og:title" content="Impacto social e ODS | Esportes sem Limites">
+<meta property="og:description" content="Como o esporte inclusivo contribui para os Objetivos de Desenvolvimento Sustentável da Agenda 2030.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Jost:wght@500&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+  /* Aplica preferências salvas antes da renderização (evita "piscar" o tema) */
+  try { var p = JSON.parse(localStorage.getItem("esl:prefs") || "{}"); var d = document.documentElement;
+    if (p.scale) d.style.setProperty("--font-scale", p.scale);
+    if (p.theme && p.theme !== "auto") d.setAttribute("data-theme", p.theme);
+    if (p.contrast) d.setAttribute("data-contrast", p.contrast); } catch (e) {}
+</script>
+</head>
+<body data-page="impacto">
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" fill="currentColor"/><circle cx="32" cy="32" r="15" fill="none" stroke="var(--bg)" stroke-width="5"/><path d="M17 32h30" stroke="var(--bg)" stroke-width="5"/></svg><span>Esportes sem Limites</span></a>
+    <button type="button" class="nav__toggle" aria-controls="painel-menu" aria-expanded="false">
+      <span class="nav__toggle-icon" aria-hidden="true"></span><span class="nav__toggle-label">Menu</span>
+    </button>
+    <div class="nav__panel" id="painel-menu">
+      <nav aria-label="Principal">
+        <ul class="nav__menu" id="menu-principal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="modalidades.html">Modalidades</a></li>
+        <li><a href="paradesporto.html">Paradesporto</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="participe.html">Participe</a></li>
+        <li><a href="doe.html">Doe</a></li>
+        <li><a href="impacto.html" aria-current="page">Impacto e ODS</a></li>
+        <li><a href="assistente.html">Assistente IA</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <form class="search" id="form-busca" role="search" action="assistente.html">
+        <label class="sr-only" for="busca-site">Buscar no site</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="busca-site" name="q" placeholder="Buscar no site" autocomplete="off">
+        <ul class="search__results" id="busca-resultados" hidden></ul>
+        <p class="sr-only" id="busca-status" role="status"></p>
+      </form>
+    </div>
+  </div>
+</header>
+<div class="local-bar">
+  <div class="container">
+    <p class="local-bar__title">Impacto e ODS</p>
+    <div class="a11y-group">
+      <p class="a11y-group__label" id="a11y-label">Acessibilidade</p>
+      <button type="button" class="a11y-toggle" aria-controls="a11y-tools" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="4.5" r="1.8"/><path d="M5 8.5l7 1.5 7-1.5M12 10v5m0 0-3 6m3-6 3 6"/></svg>
+        <span>Acessibilidade</span>
+      </button>
+      <ul class="a11y-tools" id="a11y-tools" aria-labelledby="a11y-label">
+        <li><button type="button" id="a11y-font-up" aria-label="Aumentar tamanho da fonte">A+</button></li>
+        <li><button type="button" id="a11y-font-down" aria-label="Diminuir tamanho da fonte">A−</button></li>
+        <li><button type="button" id="a11y-contrast" aria-pressed="false">Alto contraste</button></li>
+        <li><button type="button" id="a11y-dark" aria-pressed="false">Modo claro</button></li>
+        <li><button type="button" id="a11y-readable" aria-pressed="false">Espaçar texto</button></li>
+        <li><button type="button" id="a11y-motion" aria-pressed="false">Pausar animações</button></li>
+        <li><button type="button" id="a11y-reset">Restaurar</button></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<main id="conteudo" tabindex="-1">
+<section class="hero hero--page" aria-labelledby="titulo">
+  <div class="container hero__content">
+    <nav class="breadcrumb" aria-label="Você está em">
+      <ol><li><a href="index.html">Início</a></li><li aria-current="page">Impacto e ODS</li></ol>
+    </nav>
+    <h1 id="titulo">Impacto social e ODS</h1>
+    <p class="mb-0">O esporte é reconhecido pela ONU como “importante facilitador” do desenvolvimento sustentável. Veja como nosso trabalho se conecta à Agenda 2030.</p>
+  </div>
+</section>
+<section class="section" aria-labelledby="t-ods">
+  <div class="container">
+    <div class="section-head"><h2 id="t-ods">Nossa contribuição para os ODS</h2><p>Os Objetivos de Desenvolvimento Sustentável são 17 metas globais da ONU para 2030. Progresso das metas internas da ONG (dados fictícios).</p></div>
+    <div class="ods-grid">
+      <article class="ods">
+        <span class="ods__num" aria-hidden="true">3</span>
+        <h3>ODS 3 — Saúde e bem-estar</h3>
+        <p>Atividade física regular para pessoas com deficiência, prevenindo doenças secundárias e promovendo saúde mental.</p>
+        <p><span id="meta-3">Meta 2026: 78% atingida</span></p>
+        <div class="progress" role="progressbar" aria-labelledby="meta-3" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"><span style="width:78%"></span></div>
+      </article>
+      <article class="ods">
+        <span class="ods__num" aria-hidden="true">4</span>
+        <h3>ODS 4 — Educação de qualidade</h3>
+        <p>Formação de professores em Educação Física inclusiva em escolas públicas.</p>
+        <p><span id="meta-4">Meta 2026: 64% atingida</span></p>
+        <div class="progress" role="progressbar" aria-labelledby="meta-4" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"><span style="width:64%"></span></div>
+      </article>
+      <article class="ods">
+        <span class="ods__num" aria-hidden="true">5</span>
+        <h3>ODS 5 — Igualdade de gênero</h3>
+        <p>Turmas e lideranças femininas: meta de 50% de atletas mulheres.</p>
+        <p><span id="meta-5">Meta 2026: 41% atingida</span></p>
+        <div class="progress" role="progressbar" aria-labelledby="meta-5" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100"><span style="width:41%"></span></div>
+      </article>
+      <article class="ods">
+        <span class="ods__num" aria-hidden="true">10</span>
+        <h3>ODS 10 — Redução das desigualdades</h3>
+        <p>Esporte gratuito e acessível para quem historicamente ficou de fora.</p>
+        <p><span id="meta-10">Meta 2026: 70% atingida</span></p>
+        <div class="progress" role="progressbar" aria-labelledby="meta-10" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span style="width:70%"></span></div>
+      </article>
+      <article class="ods">
+        <span class="ods__num" aria-hidden="true">11</span>
+        <h3>ODS 11 — Cidades sustentáveis</h3>
+        <p>Mapeamento e advocacy por espaços esportivos públicos acessíveis.</p>
+        <p><span id="meta-11">Meta 2026: 35% atingida</span></p>
+        <div class="progress" role="progressbar" aria-labelledby="meta-11" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"><span style="width:35%"></span></div>
+      </article>
+      <article class="ods">
+        <span class="ods__num" aria-hidden="true">12</span>
+        <h3>ODS 12 — Consumo responsável</h3>
+        <p>Reuso e manutenção de equipamentos esportivos na oficina da ONG.</p>
+        <p><span id="meta-12">Meta 2026: 58% atingida</span></p>
+        <div class="progress" role="progressbar" aria-labelledby="meta-12" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"><span style="width:58%"></span></div>
+      </article>
+      <article class="ods">
+        <span class="ods__num" aria-hidden="true">17</span>
+        <h3>ODS 17 — Parcerias</h3>
+        <p>Rede com escolas, universidades, poder público e empresas.</p>
+        <p><span id="meta-17">Meta 2026: 52% atingida</span></p>
+        <div class="progress" role="progressbar" aria-labelledby="meta-17" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"><span style="width:52%"></span></div>
+      </article>
+    </div>
+    <p class="source">Referência: Agenda 2030 para o Desenvolvimento Sustentável, ONU (parágrafo 37 reconhece o esporte como facilitador do desenvolvimento).</p>
+  </div>
+</section>
+
+<section class="section band--dark" aria-labelledby="t-sust">
+  <div class="container">
+    <div class="section-head"><h2 id="t-sust">Sustentabilidade na prática</h2><p>Sustentabilidade é social, ambiental e econômica.</p></div>
+    <div class="grid grid--3">
+      <article class="card"><span class="tag">Social</span><h3>Inclusão que permanece</h3><p>Atletas formados viram monitores e voluntários: o conhecimento fica na comunidade e o projeto se multiplica.</p></article>
+      <article class="card"><span class="tag">Ambiental</span><h3>Equipamentos circulares</h3><p>Mais de 300 itens reaproveitados na oficina (dado fictício), evitando descarte e compra de novos.</p></article>
+      <article class="card"><span class="tag">Econômica</span><h3>Fontes diversas</h3><p>Doações individuais, editais públicos e parcerias reduzem a dependência de um único financiador.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="t-site-verde">
+  <div class="container split">
+    <div>
+      <h2 id="t-site-verde">Um site mais leve e sustentável</h2>
+      <p class="muted">O próprio site foi pensado para gastar menos energia e dados — o que também ajuda quem tem internet limitada.</p>
+    </div>
+    <ul class="list-check">
+      <li>Sem frameworks pesados: HTML, CSS e JavaScript puros.</li>
+      <li>Nenhuma foto ou ilustração: só texto e CSS, com páginas muito leves.</li>
+      <li>Sem rastreadores, cookies de publicidade ou coleta de dados em servidor.</li>
+      <li>Tema escuro por padrão, que economiza bateria em telas OLED.</li>
+      <li>Hospedagem estática (GitHub Pages), que consome menos recursos que servidores dinâmicos.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="t-comp">
+  <div class="container split">
+    <div>
+      <h2 id="t-comp">Assuma um compromisso</h2>
+      <p class="muted">Inclusão também depende de atitudes individuais. Escolha seus compromissos — eles ficam salvos no seu navegador para você lembrar.</p>
+      <p>Compromissos assumidos: <strong id="total-compromissos">0</strong></p>
+      <ul id="compromissos-lista"></ul>
+    </div>
+    <form id="form-compromisso" class="form" action="#" method="post">
+      <fieldset class="field">
+        <legend>Eu me comprometo a:</legend>
+        <div class="form">
+          <label class="option" for="c1"><input type="checkbox" id="c1" name="compromisso" value="Usar linguagem sem capacitismo"> Usar linguagem sem capacitismo</label>
+          <label class="option" for="c2"><input type="checkbox" id="c2" name="compromisso" value="Assistir a uma competição paralímpica"> Assistir a uma competição paralímpica</label>
+          <label class="option" for="c3"><input type="checkbox" id="c3" name="compromisso" value="Doar um equipamento esportivo parado"> Doar um equipamento esportivo parado</label>
+          <label class="option" for="c4"><input type="checkbox" id="c4" name="compromisso" value="Cobrar acessibilidade nos espaços esportivos da minha cidade"> Cobrar acessibilidade nos espaços esportivos da minha cidade</label>
+          <label class="option" for="c5"><input type="checkbox" id="c5" name="compromisso" value="Aprender o básico de Libras"> Aprender o básico de Libras</label>
+        </div>
+        <p class="error-msg" id="compromisso-erro" role="alert"></p>
+      </fieldset>
+      <button class="btn" type="submit">Salvar compromissos</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <section aria-labelledby="f-ong">
+        <h2 id="f-ong">Esportes sem Limites</h2>
+        <p class="muted">Esporte é direito de todas as pessoas. Atuamos para que pessoas com deficiência pratiquem, compitam e se divirtam com autonomia.</p>
+        <form id="form-newsletter" aria-describedby="newsletter-msg">
+          <label for="newsletter-email">Receba a agenda mensal por e-mail</label>
+          <div class="newsletter">
+            <input type="email" id="newsletter-email" name="email" autocomplete="email" placeholder="seu@email.com" required>
+            <button class="btn btn--sm" type="submit">Assinar</button>
+          </div>
+          <p id="newsletter-msg" role="status" class="muted"></p>
+        </form>
+      </section>
+      <nav aria-labelledby="f-nav">
+        <h2 id="f-nav">Conteúdo</h2>
+        <ul>
+          <li><a href="sobre.html">Sobre a ONG</a></li>
+          <li><a href="modalidades.html">Modalidades adaptadas</a></li>
+          <li><a href="paradesporto.html">História e classificação</a></li>
+          <li><a href="impacto.html">Impacto e ODS</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-part">
+        <h2 id="f-part">Participe</h2>
+        <ul>
+          <li><a href="participe.html">Inscrição de atleta</a></li>
+          <li><a href="participe.html#perfil-voluntario">Seja voluntário(a)</a></li>
+          <li><a href="doe.html">Faça uma doação</a></li>
+          <li><a href="eventos.html">Agenda de eventos</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-ajuda">
+        <h2 id="f-ajuda">Ajuda</h2>
+        <ul>
+          <li><a href="assistente.html">Assistente IA</a></li>
+          <li><a href="contato.html#faq">Perguntas frequentes</a></li>
+          <li><a href="contato.html#acessibilidade">Declaração de acessibilidade</a></li>
+          <li><a href="contato.html">Fale conosco</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="mb-0">© <span data-year>2026</span> Esportes sem Limites — ONG fictícia criada para projeto acadêmico.</p>
+      <p class="mb-0">Contribui com os ODS 3, 4, 5, 10, 11, 12 e 17 da Agenda 2030 da ONU.</p>
+    </div>
+  </div>
+</footer>
+<a class="btn assist-fab" href="assistente.html">Dúvidas? Pergunte à IA</a>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/vlibras.js" defer></script>
+</body>
+</html>

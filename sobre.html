@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sobre a ONG | Esportes sem Limites</title>
+<meta name="description" content="Missão, visão, valores, história, equipe e transparência do Esportes sem Limites, ONG de esporte inclusivo.">
+<meta name="theme-color" content="#111111">
+<meta property="og:title" content="Sobre a ONG | Esportes sem Limites">
+<meta property="og:description" content="Missão, visão, valores, história, equipe e transparência do Esportes sem Limites, ONG de esporte inclusivo.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Jost:wght@500&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+  /* Aplica preferências salvas antes da renderização (evita "piscar" o tema) */
+  try { var p = JSON.parse(localStorage.getItem("esl:prefs") || "{}"); var d = document.documentElement;
+    if (p.scale) d.style.setProperty("--font-scale", p.scale);
+    if (p.theme && p.theme !== "auto") d.setAttribute("data-theme", p.theme);
+    if (p.contrast) d.setAttribute("data-contrast", p.contrast); } catch (e) {}
+</script>
+</head>
+<body data-page="sobre">
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" fill="currentColor"/><circle cx="32" cy="32" r="15" fill="none" stroke="var(--bg)" stroke-width="5"/><path d="M17 32h30" stroke="var(--bg)" stroke-width="5"/></svg><span>Esportes sem Limites</span></a>
+    <button type="button" class="nav__toggle" aria-controls="painel-menu" aria-expanded="false">
+      <span class="nav__toggle-icon" aria-hidden="true"></span><span class="nav__toggle-label">Menu</span>
+    </button>
+    <div class="nav__panel" id="painel-menu">
+      <nav aria-label="Principal">
+        <ul class="nav__menu" id="menu-principal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html" aria-current="page">Sobre</a></li>
+        <li><a href="modalidades.html">Modalidades</a></li>
+        <li><a href="paradesporto.html">Paradesporto</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="participe.html">Participe</a></li>
+        <li><a href="doe.html">Doe</a></li>
+        <li><a href="impacto.html">Impacto e ODS</a></li>
+        <li><a href="assistente.html">Assistente IA</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <form class="search" id="form-busca" role="search" action="assistente.html">
+        <label class="sr-only" for="busca-site">Buscar no site</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="busca-site" name="q" placeholder="Buscar no site" autocomplete="off">
+        <ul class="search__results" id="busca-resultados" hidden></ul>
+        <p class="sr-only" id="busca-status" role="status"></p>
+      </form>
+    </div>
+  </div>
+</header>
+<div class="local-bar">
+  <div class="container">
+    <p class="local-bar__title">Sobre</p>
+    <div class="a11y-group">
+      <p class="a11y-group__label" id="a11y-label">Acessibilidade</p>
+      <button type="button" class="a11y-toggle" aria-controls="a11y-tools" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="4.5" r="1.8"/><path d="M5 8.5l7 1.5 7-1.5M12 10v5m0 0-3 6m3-6 3 6"/></svg>
+        <span>Acessibilidade</span>
+      </button>
+      <ul class="a11y-tools" id="a11y-tools" aria-labelledby="a11y-label">
+        <li><button type="button" id="a11y-font-up" aria-label="Aumentar tamanho da fonte">A+</button></li>
+        <li><button type="button" id="a11y-font-down" aria-label="Diminuir tamanho da fonte">A−</button></li>
+        <li><button type="button" id="a11y-contrast" aria-pressed="false">Alto contraste</button></li>
+        <li><button type="button" id="a11y-dark" aria-pressed="false">Modo claro</button></li>
+        <li><button type="button" id="a11y-readable" aria-pressed="false">Espaçar texto</button></li>
+        <li><button type="button" id="a11y-motion" aria-pressed="false">Pausar animações</button></li>
+        <li><button type="button" id="a11y-reset">Restaurar</button></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<main id="conteudo" tabindex="-1">
+<section class="hero hero--page" aria-labelledby="titulo">
+  <div class="container hero__content">
+    <nav class="breadcrumb" aria-label="Você está em">
+      <ol><li><a href="index.html">Início</a></li><li aria-current="page">Sobre</li></ol>
+    </nav>
+    <h1 id="titulo">Sobre o Esportes sem Limites</h1>
+    <p class="mb-0">Nascemos de uma quadra emprestada e de uma pergunta simples: por que tão poucas pessoas com deficiência praticam esporte?</p>
+  </div>
+</section>
+<section class="section" aria-labelledby="t-missao">
+  <div class="container">
+    <h2 id="t-missao" class="sr-only">Missão, visão e valores</h2>
+    <div class="grid grid--3">
+      <article class="card"><span class="tag tag--dark">Missão</span><h3>Garantir o direito ao esporte</h3><p>Promover a prática esportiva de pessoas com deficiência com qualidade, gratuidade e autonomia, do lazer ao alto rendimento.</p></article>
+      <article class="card"><span class="tag tag--dark">Visão</span><h3>Uma cidade onde todos jogam</h3><p>Ser referência regional em esporte inclusivo até 2030, com polos em todas as regiões da cidade.</p></article>
+      <article class="card"><span class="tag tag--dark">Valores</span><h3>Autonomia, respeito e alegria</h3><p>“Nada sobre nós sem nós”: pessoas com deficiência participam de todas as decisões da ONG.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="t-hist">
+  <div class="container split">
+    <div>
+      <h2 id="t-hist">Nossa história</h2>
+      <p class="muted">A trajetória abaixo é fictícia e foi criada para este projeto acadêmico, inspirada em iniciativas reais de esporte inclusivo no Brasil.</p>
+    </div>
+    <ol class="timeline">
+      <li><time datetime="2015">2015</time><p>Um grupo de professores de Educação Física e atletas cadeirantes cria a primeira turma de basquete em cadeira de rodas, numa quadra de escola pública.</p></li>
+      <li><time datetime="2018">2018</time><p>A ONG é formalizada e abre turmas de goalball e bocha. Primeira oficina de manutenção de cadeiras esportivas.</p></li>
+      <li><time datetime="2021">2021</time><p>Lançamento do programa de formação de professores em Educação Física inclusiva, com 46 escolas parceiras.</p></li>
+      <li><time datetime="2024">2024</time><p>Três atletas formados na ONG são convocados para seleções estaduais.</p></li>
+      <li><time datetime="2026">2026</time><p>Lançamento deste site acessível, com assistente de IA para tirar dúvidas sobre o esporte inclusivo.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section band--dark" aria-labelledby="t-modelo">
+  <div class="container split">
+    <div>
+      <h2 id="t-modelo">O modelo social da deficiência</h2>
+      <p>Trabalhamos com o <strong>modelo social</strong>, adotado pela Convenção da ONU sobre os Direitos das Pessoas com Deficiência: a deficiência resulta da interação entre a pessoa e as barreiras do ambiente.</p>
+      <p>Ou seja, quem precisa mudar é a quadra sem rampa, a regra que não se adapta e a atitude que exclui — não a pessoa.</p>
+    </div>
+    <ul class="list-check">
+      <li><strong>Barreiras arquitetônicas:</strong> vestiários sem acessibilidade, ginásios sem rampa.</li>
+      <li><strong>Barreiras atitudinais:</strong> preconceito, superproteção e capacitismo.</li>
+      <li><strong>Barreiras comunicacionais:</strong> falta de Libras, audiodescrição e materiais em braille.</li>
+      <li><strong>Barreiras econômicas:</strong> uma cadeira esportiva pode custar mais de R$ 10 mil.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="t-equipe">
+  <div class="container">
+    <div class="section-head"><h2 id="t-equipe">Equipe</h2><p>Metade da nossa coordenação é formada por pessoas com deficiência. (Pessoas fictícias.)</p></div>
+    <div class="grid grid--4">
+      <article class="card"><div class="card__media" aria-hidden="true"><span class="stat__value">RA</span></div><h3>Renata Alves</h3><p>Coordenadora geral · ex-atleta de basquete em cadeira de rodas</p></article>
+      <article class="card"><div class="card__media" aria-hidden="true"><span class="stat__value">JM</span></div><h3>João Mendes</h3><p>Professor de goalball · pessoa com baixa visão</p></article>
+      <article class="card"><div class="card__media" aria-hidden="true"><span class="stat__value">CS</span></div><h3>Camila Souza</h3><p>Fisioterapeuta esportiva e classificadora funcional</p></article>
+      <article class="card"><div class="card__media" aria-hidden="true"><span class="stat__value">TL</span></div><h3>Thiago Lima</h3><p>Intérprete de Libras e coordenador de voluntários</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="transparencia" aria-labelledby="t-transp">
+  <div class="container">
+    <div class="section-head"><h2 id="t-transp">Transparência</h2><p>Como cada real foi aplicado no último ano (valores fictícios).</p></div>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Tabela com rolagem horizontal">
+      <table>
+        <caption>Aplicação de recursos — exercício 2025</caption>
+        <thead><tr><th scope="col">Área</th><th scope="col">Percentual</th><th scope="col">O que inclui</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Atividades esportivas</th><td>62%</td><td>Professores, espaço, transporte acessível de atletas</td></tr>
+          <tr><th scope="row">Equipamentos</th><td>18%</td><td>Cadeiras esportivas, bolas com guizo, manutenção</td></tr>
+          <tr><th scope="row">Formação</th><td>11%</td><td>Cursos para professores e voluntários</td></tr>
+          <tr><th scope="row">Administração</th><td>9%</td><td>Contabilidade, comunicação, site</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <section aria-labelledby="f-ong">
+        <h2 id="f-ong">Esportes sem Limites</h2>
+        <p class="muted">Esporte é direito de todas as pessoas. Atuamos para que pessoas com deficiência pratiquem, compitam e se divirtam com autonomia.</p>
+        <form id="form-newsletter" aria-describedby="newsletter-msg">
+          <label for="newsletter-email">Receba a agenda mensal por e-mail</label>
+          <div class="newsletter">
+            <input type="email" id="newsletter-email" name="email" autocomplete="email" placeholder="seu@email.com" required>
+            <button class="btn btn--sm" type="submit">Assinar</button>
+          </div>
+          <p id="newsletter-msg" role="status" class="muted"></p>
+        </form>
+      </section>
+      <nav aria-labelledby="f-nav">
+        <h2 id="f-nav">Conteúdo</h2>
+        <ul>
+          <li><a href="sobre.html">Sobre a ONG</a></li>
+          <li><a href="modalidades.html">Modalidades adaptadas</a></li>
+          <li><a href="paradesporto.html">História e classificação</a></li>
+          <li><a href="impacto.html">Impacto e ODS</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-part">
+        <h2 id="f-part">Participe</h2>
+        <ul>
+          <li><a href="participe.html">Inscrição de atleta</a></li>
+          <li><a href="participe.html#perfil-voluntario">Seja voluntário(a)</a></li>
+          <li><a href="doe.html">Faça uma doação</a></li>
+          <li><a href="eventos.html">Agenda de eventos</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-ajuda">
+        <h2 id="f-ajuda">Ajuda</h2>
+        <ul>
+          <li><a href="assistente.html">Assistente IA</a></li>
+          <li><a href="contato.html#faq">Perguntas frequentes</a></li>
+          <li><a href="contato.html#acessibilidade">Declaração de acessibilidade</a></li>
+          <li><a href="contato.html">Fale conosco</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="mb-0">© <span data-year>2026</span> Esportes sem Limites — ONG fictícia criada para projeto acadêmico.</p>
+      <p class="mb-0">Contribui com os ODS 3, 4, 5, 10, 11, 12 e 17 da Agenda 2030 da ONU.</p>
+    </div>
+  </div>
+</footer>
+<a class="btn assist-fab" href="assistente.html">Dúvidas? Pergunte à IA</a>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/vlibras.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paradesporto | Esportes sem Limites</title>
+<meta name="description" content="História do movimento paralímpico, classificação funcional, legislação e linguagem sem capacitismo.">
+<meta name="theme-color" content="#111111">
+<meta property="og:title" content="Paradesporto | Esportes sem Limites">
+<meta property="og:description" content="História do movimento paralímpico, classificação funcional, legislação e linguagem sem capacitismo.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Jost:wght@500&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+  /* Aplica preferências salvas antes da renderização (evita "piscar" o tema) */
+  try { var p = JSON.parse(localStorage.getItem("esl:prefs") || "{}"); var d = document.documentElement;
+    if (p.scale) d.style.setProperty("--font-scale", p.scale);
+    if (p.theme && p.theme !== "auto") d.setAttribute("data-theme", p.theme);
+    if (p.contrast) d.setAttribute("data-contrast", p.contrast); } catch (e) {}
+</script>
+</head>
+<body data-page="paradesporto">
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" fill="currentColor"/><circle cx="32" cy="32" r="15" fill="none" stroke="var(--bg)" stroke-width="5"/><path d="M17 32h30" stroke="var(--bg)" stroke-width="5"/></svg><span>Esportes sem Limites</span></a>
+    <button type="button" class="nav__toggle" aria-controls="painel-menu" aria-expanded="false">
+      <span class="nav__toggle-icon" aria-hidden="true"></span><span class="nav__toggle-label">Menu</span>
+    </button>
+    <div class="nav__panel" id="painel-menu">
+      <nav aria-label="Principal">
+        <ul class="nav__menu" id="menu-principal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="modalidades.html">Modalidades</a></li>
+        <li><a href="paradesporto.html" aria-current="page">Paradesporto</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="participe.html">Participe</a></li>
+        <li><a href="doe.html">Doe</a></li>
+        <li><a href="impacto.html">Impacto e ODS</a></li>
+        <li><a href="assistente.html">Assistente IA</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <form class="search" id="form-busca" role="search" action="assistente.html">
+        <label class="sr-only" for="busca-site">Buscar no site</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="busca-site" name="q" placeholder="Buscar no site" autocomplete="off">
+        <ul class="search__results" id="busca-resultados" hidden></ul>
+        <p class="sr-only" id="busca-status" role="status"></p>
+      </form>
+    </div>
+  </div>
+</header>
+<div class="local-bar">
+  <div class="container">
+    <p class="local-bar__title">Paradesporto</p>
+    <div class="a11y-group">
+      <p class="a11y-group__label" id="a11y-label">Acessibilidade</p>
+      <button type="button" class="a11y-toggle" aria-controls="a11y-tools" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="4.5" r="1.8"/><path d="M5 8.5l7 1.5 7-1.5M12 10v5m0 0-3 6m3-6 3 6"/></svg>
+        <span>Acessibilidade</span>
+      </button>
+      <ul class="a11y-tools" id="a11y-tools" aria-labelledby="a11y-label">
+        <li><button type="button" id="a11y-font-up" aria-label="Aumentar tamanho da fonte">A+</button></li>
+        <li><button type="button" id="a11y-font-down" aria-label="Diminuir tamanho da fonte">A−</button></li>
+        <li><button type="button" id="a11y-contrast" aria-pressed="false">Alto contraste</button></li>
+        <li><button type="button" id="a11y-dark" aria-pressed="false">Modo claro</button></li>
+        <li><button type="button" id="a11y-readable" aria-pressed="false">Espaçar texto</button></li>
+        <li><button type="button" id="a11y-motion" aria-pressed="false">Pausar animações</button></li>
+        <li><button type="button" id="a11y-reset">Restaurar</button></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<main id="conteudo" tabindex="-1">
+<section class="hero hero--page" aria-labelledby="titulo">
+  <div class="container hero__content">
+    <nav class="breadcrumb" aria-label="Você está em">
+      <ol><li><a href="index.html">Início</a></li><li aria-current="page">Paradesporto</li></ol>
+    </nav>
+    <h1 id="titulo">Paradesporto: história, classes e direitos</h1>
+    <p class="mb-0">Do hospital de Stoke Mandeville ao pódio de Paris: como o esporte para pessoas com deficiência nasceu, como funciona e quais direitos o garantem.</p>
+  </div>
+</section>
+<section class="section" aria-labelledby="t-linha">
+  <div class="container split">
+    <div>
+      <h2 id="t-linha">Linha do tempo</h2>
+      <p class="muted">Marcos históricos do movimento paralímpico no mundo e no Brasil.</p>
+    </div>
+    <ol class="timeline">
+      <li><time datetime="1924">1924</time><p>Primeiros Jogos Mundiais para Surdos, em Paris — hoje chamados de Surdolimpíadas (Deaflympics).</p></li>
+      <li><time datetime="1948">1948</time><p>O neurologista Ludwig Guttmann organiza os Jogos de Stoke Mandeville, na Inglaterra, com veteranos de guerra em cadeira de rodas.</p></li>
+      <li><time datetime="1960">1960</time><p>Roma recebe os primeiros Jogos Paralímpicos, com cerca de 400 atletas de 23 países.</p></li>
+      <li><time datetime="1968">1968</time><p>Criação das Special Olympics, voltadas a pessoas com deficiência intelectual.</p></li>
+      <li><time datetime="1972">1972</time><p>O Brasil participa pela primeira vez dos Jogos Paralímpicos, em Heidelberg (Alemanha).</p></li>
+      <li><time datetime="1995">1995</time><p>Fundação do Comitê Paralímpico Brasileiro (CPB).</p></li>
+      <li><time datetime="2016">2016</time><p>Rio de Janeiro sedia os Jogos Paralímpicos. Inauguração do Centro de Treinamento Paralímpico, em São Paulo.</p></li>
+      <li><time datetime="2024">2024</time><p>Em Paris, o Brasil conquista 89 medalhas (25 ouros) e termina em 5º lugar — sua melhor campanha.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="classificacao" aria-labelledby="t-class">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="t-class">Classificação funcional</h2>
+      <p>Para garantir disputas justas, atletas são agrupados por nível de funcionalidade. Letra = tipo de prova; número = tipo e grau da deficiência.</p>
+    </div>
+    <div class="class-grid">
+      <div><strong>T / F 11–13</strong><span class="muted">Atletismo — deficiência visual (11 = cegueira total)</span></div>
+      <div><strong>T / F 20</strong><span class="muted">Atletismo — deficiência intelectual</span></div>
+      <div><strong>T / F 31–38</strong><span class="muted">Atletismo — comprometimento de coordenação (ex.: paralisia cerebral)</span></div>
+      <div><strong>T / F 40–41</strong><span class="muted">Atletismo — baixa estatura</span></div>
+      <div><strong>T / F 42–47</strong><span class="muted">Atletismo — deficiência de membros (amputação, por exemplo)</span></div>
+      <div><strong>T 51–54 · F 51–57</strong><span class="muted">Atletismo — provas em cadeira de rodas</span></div>
+      <div><strong>S 1–10</strong><span class="muted">Natação — deficiência física (1 = maior comprometimento)</span></div>
+      <div><strong>S 11–13</strong><span class="muted">Natação — deficiência visual</span></div>
+      <div><strong>S 14</strong><span class="muted">Natação — deficiência intelectual</span></div>
+      <div><strong>BC 1–4</strong><span class="muted">Bocha — comprometimento motor severo</span></div>
+    </div>
+    <p class="source">Fonte de referência: Comitê Paralímpico Internacional (IPC) e Comitê Paralímpico Brasileiro. Tabela simplificada para fins educativos.</p>
+  </div>
+</section>
+
+<section class="section band--dark" id="direitos" aria-labelledby="t-dir">
+  <div class="container split">
+    <div>
+      <h2 id="t-dir">O esporte é um direito</h2>
+      <p>A legislação brasileira garante o acesso de pessoas com deficiência ao esporte, à cultura e ao lazer em igualdade de condições.</p>
+    </div>
+    <div class="accordion">
+      <details><summary>Constituição Federal (1988), art. 217</summary><div><p>Determina que é dever do Estado fomentar práticas desportivas formais e não formais como direito de cada um.</p></div></details>
+      <details><summary>Convenção da ONU sobre os Direitos das Pessoas com Deficiência</summary><div><p>Aprovada em 2006 e incorporada ao Brasil com status de emenda constitucional (Decreto nº 6.949/2009). O artigo 30 trata da participação na vida cultural, recreação, lazer e esporte.</p></div></details>
+      <details><summary>Lei Brasileira de Inclusão — Lei nº 13.146/2015</summary><div><p>Também chamada de Estatuto da Pessoa com Deficiência. Garante o direito ao esporte e ao lazer em igualdade de oportunidades e exige acessibilidade em espaços esportivos.</p></div></details>
+      <details><summary>Lei Geral do Esporte — Lei nº 14.597/2023</summary><div><p>Reconhece o paradesporto como parte do sistema esportivo nacional e prevê recursos para sua promoção.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="t-ling">
+  <div class="container">
+    <div class="section-head"><h2 id="t-ling">Fale sem capacitismo</h2><p>Capacitismo é o preconceito contra pessoas com deficiência. Ele aparece também nas palavras.</p></div>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Tabela com rolagem horizontal">
+      <table>
+        <caption>Termos a evitar e termos recomendados</caption>
+        <thead><tr><th scope="col">Evite</th><th scope="col">Prefira</th><th scope="col">Por quê</th></tr></thead>
+        <tbody>
+          <tr><td>Portador de deficiência / deficiente</td><td>Pessoa com deficiência</td><td>A pessoa vem antes da deficiência; ninguém “porta” uma deficiência.</td></tr>
+          <tr><td>Aleijado, inválido</td><td>Pessoa com deficiência física</td><td>Termos ofensivos que associam deficiência a incapacidade.</td></tr>
+          <tr><td>Surdo-mudo</td><td>Pessoa surda</td><td>A maioria das pessoas surdas não tem impedimento na fala; muitas se comunicam em Libras.</td></tr>
+          <tr><td>Preso a uma cadeira de rodas</td><td>Usuário(a) de cadeira de rodas</td><td>A cadeira é instrumento de liberdade e mobilidade, não uma prisão.</td></tr>
+          <tr><td>“Superou a deficiência”</td><td>“Venceu a competição”</td><td>Evita tratar atletas como exemplos de superação em vez de profissionais.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <section aria-labelledby="f-ong">
+        <h2 id="f-ong">Esportes sem Limites</h2>
+        <p class="muted">Esporte é direito de todas as pessoas. Atuamos para que pessoas com deficiência pratiquem, compitam e se divirtam com autonomia.</p>
+        <form id="form-newsletter" aria-describedby="newsletter-msg">
+          <label for="newsletter-email">Receba a agenda mensal por e-mail</label>
+          <div class="newsletter">
+            <input type="email" id="newsletter-email" name="email" autocomplete="email" placeholder="seu@email.com" required>
+            <button class="btn btn--sm" type="submit">Assinar</button>
+          </div>
+          <p id="newsletter-msg" role="status" class="muted"></p>
+        </form>
+      </section>
+      <nav aria-labelledby="f-nav">
+        <h2 id="f-nav">Conteúdo</h2>
+        <ul>
+          <li><a href="sobre.html">Sobre a ONG</a></li>
+          <li><a href="modalidades.html">Modalidades adaptadas</a></li>
+          <li><a href="paradesporto.html">História e classificação</a></li>
+          <li><a href="impacto.html">Impacto e ODS</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-part">
+        <h2 id="f-part">Participe</h2>
+        <ul>
+          <li><a href="participe.html">Inscrição de atleta</a></li>
+          <li><a href="participe.html#perfil-voluntario">Seja voluntário(a)</a></li>
+          <li><a href="doe.html">Faça uma doação</a></li>
+          <li><a href="eventos.html">Agenda de eventos</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-ajuda">
+        <h2 id="f-ajuda">Ajuda</h2>
+        <ul>
+          <li><a href="assistente.html">Assistente IA</a></li>
+          <li><a href="contato.html#faq">Perguntas frequentes</a></li>
+          <li><a href="contato.html#acessibilidade">Declaração de acessibilidade</a></li>
+          <li><a href="contato.html">Fale conosco</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="mb-0">© <span data-year>2026</span> Esportes sem Limites — ONG fictícia criada para projeto acadêmico.</p>
+      <p class="mb-0">Contribui com os ODS 3, 4, 5, 10, 11, 12 e 17 da Agenda 2030 da ONU.</p>
+    </div>
+  </div>
+</footer>
+<a class="btn assist-fab" href="assistente.html">Dúvidas? Pergunte à IA</a>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/vlibras.js" defer></script>
+</body>
+</html>
