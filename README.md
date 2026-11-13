@@ -4,7 +4,6 @@ Site informativo (somente interface/front-end) de uma ONG **fictícia** que prom
 
 🔗 **Site publicado (HTTPS):** `https://SEU-USUARIO.github.io/esportes-sem-limites/` ← substitua após o deploy (ver [docs/deploy.md](docs/deploy.md))
 
-![Prévia da página inicial](docs/previews/01-inicio-desktop.png)
 
 ## Informações acadêmicas
 
