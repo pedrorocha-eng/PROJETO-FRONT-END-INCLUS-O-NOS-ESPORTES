@@ -11,8 +11,8 @@ Site informativo (somente interface/front-end) de uma ONG **fictícia** que prom
 | | |
 |---|---|
 | **Instituição** | UNICID — Universidade Cidade de São Paulo |
-| **Curso** | Curso Superior de Informática |
-| **Disciplina** | DEV. Front-End — Atividade A1 |
+| **Curso** | Engenharia de Software |
+| **Disciplina** | DEV. Front-End |
 | **Professor** | Paulo Sergio Fratta Junior |
 
 ## Equipe
